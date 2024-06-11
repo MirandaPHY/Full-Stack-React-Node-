@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela</title>
+</head>
+<body>
+    <!-- Tabelas
+        <table> -> indica o elemento da tabela
+        <tr> -> linha da tabela (table row)
+        <td> -> célula da tabela (table data)
+        <th> -> cabeçalho da tabela (table header)
+        <thead> -> cabeçalho da tabela 
+        <tbody> -> corpo da tabela
+        <tfoot> -> rodapé da tabela
+        <caption> -> título da tabela
+    -->
+
+        <table border="1" style="border-collapse:collapse;">
+            <tr>
+              <th>Nome</th>
+              <th>Idade</th>
+              <th>Endereço</th>
+              <th>Telefone</th>
+              <th>CPF</th>
+            </tr>
+
+           <tr>
+            <td>Paulo</td>
+            <td>32</td>
+            <td>Passagem Merces</td>
+            <td>99929-5905</td>
+            <td>904.111.002.55</td>
+           </td>
+
+           <tr>
+            <td>Luiza</td>
+            <td>50</td>
+            <td>Rua Gaiapos</td>
+            <td>98399-5811</td>
+            <td>904.111.002.55</td>
+           </td>
+
+           <tr>
+            <td>Antonio</td>
+            <td>32</td>
+            <td>Passagem Merces</td>
+            <td>99929-5905</td>
+            <td>904.111.002.55</td>
+           </td>
+
+           <tr>
+            <td>Silva</td>
+            <td>32</td>
+            <td>Passagem Merces</td>
+            <td>99929-5905</td>
+            <td>904.111.002.55</td>
+           </td>
+
+           <tr>
+            <td>Kathleen</td>
+            <td>32</td>
+            <td>Passagem Merces</td>
+            <td>99929-5905</td>
+            <td>904.111.002.55</td>
+           </td>
+
+           <tr>
+            <td>Alcimnar</td>
+            <td>32</td>
+            <td>Passagem Merces</td>
+            <td>99929-5905</td>
+            <td>904.111.002.55</td>
+           </td>
+
+           <tr>
+            <td>Sergio</td>
+            <td>32</td>
+            <td>Passagem Antonio</td>
+            <td>99929-5905</td>
+            <td>904.111.002.55</td>
+           </td>
+          </table>
+
+          <hr  >
+
+      <table border="1" style="border-collapse:collapse;">
+          <thead>
+            <tr>
+              <th colspan="4">Lista de funcionários</th>
+          </tr>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Pagamento realizado</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Paulo</td>
+              <td>paulo.henderson@gmail.com</td>
+              <td>Sim</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>Kely</td>
+              <td>pa0025n@gmail.com</td>
+              <td>Sim</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>kathlenn</td>
+              <td>kathleen001@gmail.com</td>
+              <td>Sim</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>Alcimnar</td>
+              <td>aci002@gmail.com</td>
+              <td>Sim</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>Danilo</td>
+              <td>dam003@gmail.com</td>
+              <td>Não</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>anderson</td>
+              <td>anderson553@gmail.com</td>
+              <td>Não</td>
+            </tr>
+
+          </tbody>
+
+          <tfoot>
+            <td>
+              <td colspan="4" >Obs: Os funcionarios recebem no ultimo dia util</td>
+            </td>
+          </tfoot>
+      </table>
+
+      <hr>
+
+      <table border="1" style="border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Disciplina</th>
+            <th>Nota</th>
+            <th>Media</th>
+            
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="6">Paulo</td>
+            <td>Português</td>
+            <td>10.0</td>
+            <td rowspan="6">7,33</td>
+          </tr>
+
+          <tr>
+            <td>Matematica</td>
+            <td>10.0</td>
+            
+          </tr>
+
+          <tr>
+            <td>Geografia</td>
+            <td>9.00</td>
+            
+          </tr>
+
+          <tr>
+            
+            <td>Fisica</td>
+            <td>8.00</td>
+            
+          </tr>
+
+          <tr>
+            
+            <td>Ciencia</td>
+            <td>7.0</td>
+           
+          </tr>
+
+          <tr>
+            
+            <td>Programação</td>
+            <td>9.0</td>
+            
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="4">Obs: Notas do aluno na primeira avaliação de cada materia</td>
+          </tr>
+        </tfoot>
+      </table>
+
+        <hr>
+
+        <table border="1" style="border-collapse: collapse;">
+          <tr>
+            <th colspan="5">Libertadores</th>
+        </tr>
+          <tr>
+            <th>Zonas</th>
+            <th>Clube</th>
+            <th>Pontuação</th>
+            <th>Gols</th>
+            <th>Vitorias</th>
+          </tr>
+
+          <tr>
+            <td rowspan="4">Libertadores</td>
+            <td>Corinthians</td>
+            <td>30</td>
+            <td>30</td>
+            <td>10</td>
+          </tr>
+
+          <tr>
+            <td>Palmeiras</td>
+            <td>25</td>
+            <td>25</td>
+            <td>8</td>
+          </tr>
+
+          <tr>
+            <td>Flamengo</td>
+            <td>20</td>
+            <td>20</td>
+            <td>6</td>
+          </tr>
+
+          <tr>
+            <td>Santos</td>
+            <td>15</td>
+            <td>15</td>
+            <td>4</td> 
+          </tr>
+
+          <tr>
+            <td rowspan="4">Pre-Libertadores</td>
+            <td>São Paulo</td>
+            <td>10</td>
+            <td>10</td>
+            <td>2</td>  
+          </tr>
+
+          <tr>
+            <td>Botafogo</td>
+            <td>5</td>
+            <td>5</td>
+            <td>1</td>  
+          </tr>
+
+          <tfoot>
+            <tr>
+              <td colspan="5">Obs: Classificados e Pre-Classificados para a Libertadores</td>
+            </tr>
+        </table>
+
+
+
+
+</body>
+</html>

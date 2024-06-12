@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Enquete</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+  2. Crie um formulário de enquete que inclua:
+    Pergunta da enquete
+    Opções de resposta (botões de rádio)
+    Botão de envio
+  -->
+
+  <div class="enquete">
+    <form action="resultado.php" method="post">
+      <h1>Enquete</h1>
+      <p>Qual é o seu animal favorito?</p>
+      <input type="radio" name="animal" value="cachorro">Cachorro<br>
+      <input type="radio" name="animal" value="gato">Gato<br>
+      <input type="radio" name="animal" value="peixe">Peixe<br>
+      <input type="radio" name="animal" value="passaro">Pássaro<br>
+      <input type="radio" name="animal" value="outro">Outro<br>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</body>
+</html>

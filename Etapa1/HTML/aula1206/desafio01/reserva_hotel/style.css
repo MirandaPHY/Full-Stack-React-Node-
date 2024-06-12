@@ -1,0 +1,30 @@
+*{
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background-color: #0076e5;
+  background-image: url(praia.webp);
+}
+
+h1{
+  color: rgb(0, 0, 0);
+}
+
+.box{
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input{
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

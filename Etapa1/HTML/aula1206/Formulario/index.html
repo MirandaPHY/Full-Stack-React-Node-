@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrutura do Formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+  <form> -> Conteiner do Formulario 
+  action -> Para onde os dados do formulario serao enviados
+  method -> Como os dados serao enviados
+  input -> <textarea>, <select> -> campos do formulario
+    label -> rotulo dos campos
+    type -> tipo do campo
+    name -> nome do campo
+    id -> identificador do campo
+    required -> campo obrigatorio
+    value -> valor do campo
+    placeholder="" -> Uma dica para o Usuario
+  -->
+  <div>
+    <div id="conteiner">
+      <div class="box">
+        <h1>Cadastro de Usuario</h1>
+        <div class="">
+          <form action="processa.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Seu Email" required>  
+        </div>
+
+          <div>
+            <label for="escolaridade">Escolaridade</label>
+          <select name="escolaridade" id="escolaridade" required>
+            <option value="Ensino-Fundamental">Ensino Fundamental</option>
+            <option value="Ensino-Medio">Ensino Medio</option>
+            <option value="Ensino-Superior">Ensino Superior</option>
+            <option value="pos-graduação">Pos-Graduação</option>
+          </select>
+          </div>
+          
+          <div class="grupo-sexo">
+          <label for="sexo">Sexo:</label>
+          <input type="radio" name="sexo" id="sexo" value="M" required> 
+          <label for="sexo">Masculino</label>
+          <input type="radio" name="sexo" id="sexo" value="F" required>
+          <label for="sexo">Feminino</label>
+          </div>
+          
+          <div>
+          <label for="dataNasc">Data de Nascimento:</label>
+          <input type="date" name="dataNasc" min="1980-01-01" max="2010-01-01" id="dataNasc" required>
+          </div>
+          
+          <div>
+          <label for="idade">Idade</label>
+          <input type="number" min="10" max="80" name="idade" id="idade" placeholder="Sua Idade"  required>
+          </div>
+          
+         <div>
+          <label for="estado">Estado</label>
+          <select name="estado" id="estado"  required>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="ES">Espirito Santo</option>
+            <option value="PA">Pará</option>
+          </select>
+         </div>
+          
+         <div>
+          <label for="cidade">Cidade</label>
+          <select name="cidade" id="cidade" required>
+            <option value="PA">Belem</option>
+            <option value="PA">Acailandia</option>
+            <option value="PA">Barcarena</option>
+            <option value="PA">Salinas</option>
+            <option value="PA">Acara</option>
+          </select>
+         </div>
+          
+         <div>
+          <label for="tel">Telefone:</label>
+          <input type="tel" name="tel" id="tel" placeholder="Seu Telefone Pessoal" required>
+         </div>
+          
+          <div>
+            <label for="linkedin">Link do Linkedin</label>
+          <input type="url" name="linkedin" id="linkedin" placeholder="Link do Linkedin" required>
+          </div>
+          
+          <div>
+          <p>Sua Linguagem Favorita:</p>
+          <input type="radio" name="html" id="linguagem">
+          <label for="html">Python</label>
+
+          <input type="radio" name="css" id="linguagem">
+          <label for="css">Javascript</label>
+
+          <input type="radio" name="js" id="linguagem">
+          <label for="js">Javascript</label>
+          </div>
+          
+          <div>
+          <label for="">Sua Foto:</label>
+          <input type="file" name="foto" id="foto" accept="png, jpg, pdf" required>
+          </div>
+          
+          <div>
+            <label for="senha">Senha:</label>
+          <input type="password" minlength="8" name="senha" id="senha" placeholder="Senha com numeros" required>
+          
+          <label for="confirmaSenha">Confirma Senha:</label>
+          <input type="password" minlength="8" name="confirmaSenha" id="confirmaSenha" placeholder="Confirmação da Senha" required>
+          </div>
+
+          <div>
+          <label for="Fale um pouco sobre você"></label>
+          <textarea id="descricao" name="descricao" placeholder="Fale dos seus hobbies, etc"></textarea>
+          </div>
+          
+          <div>
+          <input type="submit" value="Cadastrar">
+          <button type="reset">Limpar</button>
+          <!-- Indica para o form que este botão tem outra funcionalidade -->
+          <button type="button">Ajuda?</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

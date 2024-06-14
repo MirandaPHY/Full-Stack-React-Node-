@@ -1,0 +1,30 @@
+body{
+  background-color: papayawhip;
+  font-size: arial;
+  color: midnightblue;
+  text-align: center;
+  margin: 10px;
+}
+
+h1, h2, h3 {
+  color: darkgreen;
+}
+
+a{
+  text-decoration: none;
+  margin-right: 12px;
+}
+
+img{
+  width: 240px;
+  border-radius: 16px;
+  margin-top: 10px;
+}
+
+.material-symbols-outlined{
+  color: darkgreen;
+  font-size: 100px;
+  margin-right: 8px;
+
+}
+

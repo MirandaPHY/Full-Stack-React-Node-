@@ -1,0 +1,164 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+.background-image {
+    background-image: url('img/fundo.index.jpg');
+    background-size: cover; /* Para cobrir todo o fundo */
+    background-repeat: no-repeat; /* Para evitar repetição da imagem */
+    background-position: center center; /* Para centralizar a imagem no fundo */
+}
+
+
+header {
+    text-align: center;
+}
+
+.header-animation{
+    font-size: 60px;
+    color: #000000;
+    animation: moveUpDown 2s infinite;
+    margin-top: 40px;
+}
+
+main-content img {
+    width: 200px;
+    height: 200px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.champion {
+    margin: 20px;
+    text-align: center;
+}
+
+.champion h2 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.champion1 img {
+    width: 560px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+
+}
+
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.champion h2 {
+    /* Estilos anteriores */
+    /* ... */
+    animation: blink 2s infinite;
+}
+
+
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px); /* Ajuste a quantidade de movimento vertical */
+    }
+}
+
+.header-animation {
+    position: fixed;
+    top: 70px; /* Ajuste a posição vertical inicial */
+    transform: translateX(-50%);
+    font-size: 80px;
+    right: 25%;
+}
+-------------------------------------------------------------------------------------------------------------------------------------
+/* Define a imagem de fundo para o corpo da segunda página */
+body.caitlyn {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/Caitlyn_0.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Caitlyn .custom-paragraph{
+    font-size: 18px;
+    color: #f90303;
+    margin: 20px 0;
+}
+
+/* Adicione uma regra para aplicar animação 3D à classe Caitlyn */
+.Caitlyn {
+    margin-left: 80px;
+    transition: color 0.5s; /* Adiciona uma transição suave de 0.5 segundos para a cor */
+
+}
+
+/* Adicione uma regra para aplicar a transformação quando o mouse passar sobre o elemento */
+.Caitlyn:hover {
+    color: rgb(245, 0, 0); /* Mude a cor para vermelho ao passar o mouse sobre o elemento */
+}
+
+p {
+        font-family: "Times New Roman", serif;
+        font-size: 25px;
+        color: #000000;
+        line-height: 1.5;
+        margin-top: 20px;
+        margin-left: 220px;
+        
+ }
+
+
+ @media (max-width:768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images{
+        flex-direction: column;
+    }
+
+}
+

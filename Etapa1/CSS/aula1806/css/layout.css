@@ -22,20 +22,17 @@ html{
 }
 
 .links{
-  background-color: pink;
   width: 200px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   display: flex;
-  gap: 16px;
-  text-decoration: dashed;
+  gap: 20px;
 }
 
 .links a{
   color: rgb(55, 0, 255);
-  
-  text-decoration: solid;
+  text-decoration: none;
 }
 

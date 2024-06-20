@@ -123,40 +123,28 @@ padding: 20px;
 
 -------------
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-/* Reset = diminuir as interferências dos navegadores */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-html {
-  /* Estas propriedades são herdadas pelos elementos da página */
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  color: white;
-}
-
-body {
-  background-color: #121212;
-}
-
-/* Responsive Styles */
 @media (max-width: 768px) {
+
   .cabecalho {
-    height: 480px;
+      height: 200px;
+      padding: 32px 16 px;
   }
-
-  img{
-    width: 100%;
+  .titulo {
+      font-size: 2rem;
   }
+  .button {
+      padding: 10px 20px;
+      font-size: 1rem;
 
-  .cronograma{
-    width: 100%;
+
   }
- 
-
+  .cronograma {
+      padding: 12%;
+      width: 100%;
+      overflow-x: auto;/*Esse over flow é para se a imagem for menos que a p-agina ele cria um scrow!!!*/
+  }
+  .cadastro {
+      width: 80%;
+      padding: 12px;
+  }
 }

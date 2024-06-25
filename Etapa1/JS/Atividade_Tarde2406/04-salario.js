@@ -6,7 +6,7 @@ houver entre 1 e 5 aumentar em 30% o salário. Caso seja acima
 */
 
 let salario = 1000;
-let quantidadeDependentes = 6;
+let quantidadeDependentes = 7;
 
 if (quantidadeDependentes >= 1 && quantidadeDependentes <= 5) {
   salario = salario + (salario * 0.3);
@@ -22,4 +22,4 @@ else {
   console.log('Salário sem ajustes: R$' + salario);
 }
 
-// Output: Salário com 40% de aumento: R$1400
+// Output: Salário com 40% de aumento: R$1300

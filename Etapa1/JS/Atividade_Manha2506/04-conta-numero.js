@@ -8,7 +8,7 @@ let total = 0;
 
 while (numero <= 1000) {
     if (numero % 9 === 0) {
-        console.log(numero);
+        console.log(numero + "é divisivel por 9");
         total++;
     }
     numero++;

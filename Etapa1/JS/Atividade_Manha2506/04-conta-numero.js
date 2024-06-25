@@ -13,3 +13,5 @@ while (numero <= 1000) {
     }
     numero++;
 }
+
+console.log("Total de números divisíveis por 9: " + total);

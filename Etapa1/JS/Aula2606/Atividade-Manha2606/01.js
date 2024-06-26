@@ -1,8 +1,9 @@
 /*1. Escreva um programa que inverte uma string*/
 
-let string = "soulcode";
-let stringInvertida = "";
-for (let i = string.length - 1; i >= 0; i--) {
-    stringInvertida += string[i];
+let nome = "soulcode";
+let nomeInvertida = "";
+console.log(nome);
+for (let i = nome.length - 1; i >= 0; i--) {
+    nomeInvertida += nome[i];
 }
-console.log(stringInvertida);
+console.log(nomeInvertida);

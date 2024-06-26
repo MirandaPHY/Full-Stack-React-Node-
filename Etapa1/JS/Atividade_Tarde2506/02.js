@@ -7,6 +7,7 @@ let a = 0;
 let b = 1;
 let c = 0;
 let n = 10;
+
 for (let i = 0; i < n; i++) {
     console.log(a);
     c = a + b;

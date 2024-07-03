@@ -2,7 +2,7 @@
 // façam parte do projeto
 import "./Mensagem.css";
 
-function Mensagem() {
+function Mensagem(props) {
     const textoTitulo = "As batatas quando nascem se esparramam pelo chão";
     const nomeAutor = "J. Almir";
     const linkImagem = "https://picsum.photos/200";
@@ -16,6 +16,8 @@ function Mensagem() {
             </p>
             <small>Criado por: {nomeAutor}</small>
         </section>
+
+
     );
 }
 

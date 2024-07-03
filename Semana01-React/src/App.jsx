@@ -1,24 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Postagem from './components/Postagem'
-import Blog from "./components/Blog"
+// jsx => Javascript Extended
+// Vai permitir escrever código "HTML"
+// dentro do js
+// Declarativa
+// Açucar sintático
 
+import Rodape from "./components/Rodape";
+import Blog from "./components/Blog";
+
+// Componente principal da aplicação
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <Postagem/>
-    <Postagem/>
-    <Postagem/>
-    <Postagem/>
-    <Postagem/>
-     <Rodape/>
-
-    </>
-  )
+    return (
+        <>
+            <Blog />
+            <Rodape/>
+        </>
+    );
 }
 
-export default App
+export default App;

@@ -1,9 +1,12 @@
-function Postagem() {
+import "./Postagem.css";
+
+// props => são os atributos que definimos no uso do Postagem
+function Postagem(props) {
     return (
         <article className="postagem">
-            <h3>Título</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, et!</p>
-            <img src="https://picsum.photos/200" />
+            <h3>{props.titulo}</h3>
+            <p>{props.desc}</p>
+            <img src={props.linkImagem} alt={props.legenda}/>
         </article>
     );
 }

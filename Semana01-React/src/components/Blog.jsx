@@ -1,15 +1,17 @@
-import ".Blog.css";
+import "./Blog.css";
 import Postagem from "./Postagem";
 
 function Blog() {
-    return(
+    return (
         <section className="blog">
-            <h2>Postagem do Dia</h2>
-            <Postagem />
-            <Postagem />
-            <Postagem />
-            <Postagem />
-            <Postagem />
+            <h2>Postagens do dia</h2>
+            <Postagem titulo="React é top!!!" desc="Descrição da postagem 1" linkImagem="https://picsum.photos/200" legenda="Imagem aleatória" />
+            <Postagem titulo="Estudando CSS" desc="Descrição da postagem 2" linkImagem="https://picsum.photos/200" legenda="Imagem aleatória" />
+            <Postagem titulo="Estudando JS" desc="Descrição da postagem 2" linkImagem="https://picsum.photos/200" legenda="Imagem aleatória" />
+            <Postagem titulo="Estudando PHP" desc="Descrição da postagem 2" linkImagem="https://picsum.photos/200" legenda="Imagem aleatória" />
+            <Postagem titulo="Estudando Python" desc="Descrição da postagem 2" linkImagem="https://picsum.photos/200" legenda="Imagem aleatória" />
         </section>
-    )
+    );
 }
+
+export default Blog;

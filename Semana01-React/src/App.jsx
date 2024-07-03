@@ -8,6 +8,7 @@ import Rodape from "./components/Rodape";
 import Blog from "./components/Blog";
 import Mensagem from "./components/Mensagem";
 import Navbar from "./components/NavBar";
+import Aluno from "./components/Aluno";
 
 // Componente principal da aplicação
 function App() {
@@ -28,7 +29,6 @@ function App() {
       <Navbar logado={true} nomeUsuario="Batata"/>
       <Navbar logado={false} />
       <Blog />
-      <Rodape />
     </>
   );
 }

@@ -11,33 +11,19 @@ import Navbar from "./components/NavBar";
 import Aluno from "./components/CardAluno";
 import CardAluno from './components/CardAluno';
 import CardProduto from "./components/CardProduto";
+import Listagem from "./components/Listagem";
 
 // Componente principal da aplicação
 function App() {
   return (
     <>
-      {/* <Mensagem
-        textoTitulo="As batatas quando nascem se esparramam pelo chão"
-        nomeAutor="J. Almir"
-        paragrafo="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-        linkImagem="https://picsum.photos/200"
-      />
-      <Mensagem
-        textoTitulo="Quarta-feira é dia de React"
-        nomeAutor="Gabriel Braga"
-        paragrafo="Estudamos props e renderização condicional"
-        linkImagem="https://picsum.photos/200"
-      /> */}
-
-      <Navbar logado={true} nomeUsuario="Batata"/>
-      <Navbar logado={false} />
-      <Blog />
-
-      <CardAluno />
+      {/*<CardAluno />
 
       <CardProduto nome="Celular" precoUnitario={2000} desconto={10}/>
       <CardProduto nome="Fone Wireles" precoUnitario={100} desconto={15}/>
-      <CardProduto nome="Carro" precoUnitario={90000} desconto={0}/>
+      <CardProduto nome="Carro" precoUnitario={90000} desconto={0}/>*/}
+
+      <Listagem/>
 
     </>
   );

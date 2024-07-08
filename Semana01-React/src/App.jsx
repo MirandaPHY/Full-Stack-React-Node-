@@ -40,6 +40,7 @@ function App() {
       <CardProduto nome="Fone Wireless" precoUnitario={100} desconto={15}/>
       <CardProduto nome="Carro" precoUnitario={90000} desconto={0}/> */}
       {/* <Listagem /> */}
+      
       <Banner />
     </>
   );

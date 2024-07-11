@@ -1,8 +1,38 @@
+import { Button } from "react-bootstrap";
+import {useForm } from "react-bootstrap";
 function Cadastro() {
+
+    const {register, handleSubmit } = useForm();
+
+    function cadastrar(data) {
+        console.log("Cadastrar!");
+        console.log(data);
+    }
+    
     return (
-        <main>
+       <main>
+        <form className="form-section" onSubmit={handleSubmit(cadastrar)}>
             <h1>Cadastro</h1>
-        </main>
+            <hr />
+            <div>
+                <label htmlFor="nome">Nome</label>
+                <input type="text" id="nome" className="form-control" />
+            </div>
+
+            <div>
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" className="form-control" />
+            </div>
+
+            <div>
+                <label htmlFor="senha">Senha</label>
+                <input type="password" id="senha" className="form-control" />
+            </div>
+
+            <Button variant="dark" className="mt-1 w-100">Cadastrar</Button>
+            <Button variant="danger" className="mt-1 w-100">Entrar com o Google</Button>
+        </form>
+       </main>
     );
 }
 

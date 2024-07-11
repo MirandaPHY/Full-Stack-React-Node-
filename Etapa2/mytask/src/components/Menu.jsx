@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Navbar, Container,Nav } from 'react-bootstrap';
+import NovaTarefa from './../pages/NovaTarefa';
 
 
 function Menu() {
@@ -17,6 +18,7 @@ function Menu() {
                         <Link className="nav-link" to="/login">Login</Link>
                         <Link className="nav-link" to="/Cadastro">Cadastro</Link>
                         <Link className="nav-link" to="/Ajuda">Ajuda</Link>
+                        <Link className="nav-link" to="/NovaTarefa">NovaTarefa</Link>
                         </Nav>
                   </Navbar.Collapse>
                </Container>

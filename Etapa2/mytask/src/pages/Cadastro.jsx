@@ -1,39 +1,62 @@
 import { Button } from "react-bootstrap";
-import {useForm } from "react-bootstrap";
+import { useForm } from "react-hook-form";
+
 function Cadastro() {
+    const { register, handleSubmit, formState: { errors,  } } = useForm();
 
-    const {register, handleSubmit } = useForm();
+  function cadastrar(data) {
+    console.log("Cadastro!");
+    console.log(data);
+  }
 
-    function cadastrar(data) {
-        console.log("Cadastrar!");
-        console.log(data);
-    }
-    
-    return (
-       <main>
-        <form className="form-section" onSubmit={handleSubmit(cadastrar)}>
-            <h1>Cadastro</h1>
-            <hr />
-            <div>
-                <label htmlFor="nome">Nome</label>
-                <input type="text" id="nome" className="form-control" />
-            </div>
+  return (
+    <main>
+      <form className="form-section" onSubmit={handleSubmit(cadastrar)}>
+        <h1>Cadastro</h1>
+        <hr />
+        <div>
+          <label htmlFor="nome">Nome</label>
+          <input 
+            type="text" 
+            id="nome" 
+            className="form-control" 
+            {...register("nome", {required: true, maxLength: 150})}
+            />
+            {errors.nome && <span>Este campo é obrigatório</span>}
+            {errors.nome && <small className="invalid">O nome é Invalido!</small>}
+        </div>
 
-            <div>
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" className="form-control" />
-            </div>
-
-            <div>
-                <label htmlFor="senha">Senha</label>
-                <input type="password" id="senha" className="form-control" />
-            </div>
-
-            <Button variant="dark" className="mt-1 w-100">Cadastrar</Button>
-            <Button variant="danger" className="mt-1 w-100">Entrar com o Google</Button>
-        </form>
-       </main>
-    );
+        <div>
+          <label htmlFor="email">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            className="form-control" 
+            {...register("email", {required: true})}
+            />
+            {errors.email && <span>Este campo é obrigatório</span>}
+            {errors.email && <small className="invalid">O Email é Invalido</small>}
+        </div>
+        <div>
+          <label htmlFor="senha">Senha</label>
+          <input 
+            type="password" 
+            id="senha" 
+            className="form-control" 
+            {...register("senha", {required: true, minLength:6})}
+            />
+            {errors.senha && <span>Este campo é obrigatório</span>}
+            {errors.senha && <small className="invalid">A senha é invalida</small>}
+        </div>
+        <Button variant="dark" className="mt-1 w-100" type="submit">
+          Cadastrar
+        </Button>
+        <Button variant="danger" className="mt-1 w-100" type="button">
+          Entrar com o Google
+        </Button>
+      </form>
+    </main>
+  );
 }
 
 export default Cadastro;
